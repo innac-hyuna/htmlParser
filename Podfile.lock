@@ -1,12 +1,15 @@
 PODS:
   - Kanna (1.1.0)
+  - SnapKit (0.15.0)
 
 DEPENDENCIES:
   - Kanna (~> 1.1.0)
+  - SnapKit (~> 0.15.0)
 
 SPEC CHECKSUMS:
   Kanna: 355ed0193e5d8caf4fd996856b5bc98d586c11b6
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
 
-PODFILE CHECKSUM: 6b8cdce5b9b842ede4d77ebd5c67e3dbd81c813e
+PODFILE CHECKSUM: 06fc37f420e2b30ee51543819b69cf845b1bb9fa
 
 COCOAPODS: 1.1.0.beta.1

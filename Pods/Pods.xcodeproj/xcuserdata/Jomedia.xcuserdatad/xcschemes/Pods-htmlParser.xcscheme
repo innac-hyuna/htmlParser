@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E15565F375478DBD76847FC91D846D0"
+               BlueprintIdentifier = "A1BED7B55E3DC8EE5E85074ECB85B6C9"
                BuildableName = "Pods_htmlParser.framework"
                BlueprintName = "Pods-htmlParser"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7E15565F375478DBD76847FC91D846D0"
+            BlueprintIdentifier = "A1BED7B55E3DC8EE5E85074ECB85B6C9"
             BuildableName = "Pods_htmlParser.framework"
             BlueprintName = "Pods-htmlParser"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -16,7 +16,6 @@
 		DA8560FB1D7EDDC4007D8C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8560F91D7EDDC4007D8C6A /* LaunchScreen.storyboard */; };
 		DA8561061D7EDDC4007D8C6A /* htmlParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8561051D7EDDC4007D8C6A /* htmlParserTests.swift */; };
 		DA8561111D7EDDC4007D8C6A /* htmlParserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8561101D7EDDC4007D8C6A /* htmlParserUITests.swift */; };
-		DA85611F1D7EE5F7007D8C6A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DA85611E1D7EE5F7007D8C6A /* Podfile */; };
 		F365934D2D8321B8EE37F14B /* Pods_htmlParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B98B78DBAF607A476CC9CF5 /* Pods_htmlParser.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		DA85610C1D7EDDC4007D8C6A /* htmlParserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = htmlParserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8561101D7EDDC4007D8C6A /* htmlParserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = htmlParserUITests.swift; sourceTree = "<group>"; };
 		DA8561121D7EDDC4007D8C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA85611E1D7EE5F7007D8C6A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +143,6 @@
 				DA8560F91D7EDDC4007D8C6A /* LaunchScreen.storyboard */,
 				DA8560FC1D7EDDC4007D8C6A /* Info.plist */,
 				DA8560F41D7EDDC4007D8C6A /* htmlParser.xcdatamodeld */,
-				DA85611E1D7EE5F7007D8C6A /* Podfile */,
 			);
 			path = htmlParser;
 			sourceTree = "<group>";
@@ -281,7 +278,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA85611F1D7EE5F7007D8C6A /* Podfile in Resources */,
 				DA8560FB1D7EDDC4007D8C6A /* LaunchScreen.storyboard in Resources */,
 				DA8560F81D7EDDC4007D8C6A /* Assets.xcassets in Resources */,
 			);
