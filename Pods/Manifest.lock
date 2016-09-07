@@ -1,15 +1,26 @@
 PODS:
+  - Alamofire (3.4.1)
   - Kanna (1.1.0)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
   - SnapKit (0.15.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.4)
   - Kanna (~> 1.1.0)
+  - RealmSwift
   - SnapKit (~> 0.15.0)
 
 SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   Kanna: 355ed0193e5d8caf4fd996856b5bc98d586c11b6
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
   SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
 
-PODFILE CHECKSUM: 06fc37f420e2b30ee51543819b69cf845b1bb9fa
+PODFILE CHECKSUM: 11461195f8fe58c27f69e8da53f9dc1b8ba202a6
 
 COCOAPODS: 1.1.0.beta.1

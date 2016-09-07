@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AFFA04DC4BFE8B7761E680C8 /* Pods_htmlParser_htmlParserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432D568E027437B388F118DD /* Pods_htmlParser_htmlParserTests.framework */; };
 		D50D649C4B48A9F2E7874850 /* Pods_htmlParser_htmlParserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138C90846957FE2B7F32188C /* Pods_htmlParser_htmlParserUITests.framework */; };
+		DA216BCA1D800A1900A2EF44 /* RowDataRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA216BC91D800A1900A2EF44 /* RowDataRealm.swift */; };
+		DA216BCC1D80145B00A2EF44 /* DataRealmTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA216BCB1D80145B00A2EF44 /* DataRealmTVCell.swift */; };
 		DA8560EE1D7EDDC4007D8C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8560ED1D7EDDC4007D8C6A /* AppDelegate.swift */; };
 		DA8560F01D7EDDC4007D8C6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8560EF1D7EDDC4007D8C6A /* MainViewController.swift */; };
 		DA8560F61D7EDDC4007D8C6A /* htmlParser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA8560F41D7EDDC4007D8C6A /* htmlParser.xcdatamodeld */; };
@@ -47,6 +49,8 @@
 		8B98B78DBAF607A476CC9CF5 /* Pods_htmlParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_htmlParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0E34C1FA91E8D9570FA342 /* Pods-htmlParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htmlParser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-htmlParser/Pods-htmlParser.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B0EBE730EA183B825665E5 /* Pods-htmlParser-htmlParserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htmlParser-htmlParserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-htmlParser-htmlParserTests/Pods-htmlParser-htmlParserTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA216BC91D800A1900A2EF44 /* RowDataRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowDataRealm.swift; sourceTree = "<group>"; };
+		DA216BCB1D80145B00A2EF44 /* DataRealmTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRealmTVCell.swift; sourceTree = "<group>"; };
 		DA8560EA1D7EDDC4007D8C6A /* htmlParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = htmlParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8560ED1D7EDDC4007D8C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8560EF1D7EDDC4007D8C6A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -140,12 +144,14 @@
 			isa = PBXGroup;
 			children = (
 				DA8560ED1D7EDDC4007D8C6A /* AppDelegate.swift */,
+				DA216BCB1D80145B00A2EF44 /* DataRealmTVCell.swift */,
 				DA8560EF1D7EDDC4007D8C6A /* MainViewController.swift */,
 				DA8561201D7F272E007D8C6A /* Extention.swift */,
 				DA8560F71D7EDDC4007D8C6A /* Assets.xcassets */,
 				DA8560F91D7EDDC4007D8C6A /* LaunchScreen.storyboard */,
 				DA8560FC1D7EDDC4007D8C6A /* Info.plist */,
 				DA8560F41D7EDDC4007D8C6A /* htmlParser.xcdatamodeld */,
+				DA216BC91D800A1900A2EF44 /* RowDataRealm.swift */,
 			);
 			path = htmlParser;
 			sourceTree = "<group>";
@@ -446,7 +452,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8561211D7F272E007D8C6A /* Extention.swift in Sources */,
+				DA216BCA1D800A1900A2EF44 /* RowDataRealm.swift in Sources */,
 				DA8560F01D7EDDC4007D8C6A /* MainViewController.swift in Sources */,
+				DA216BCC1D80145B00A2EF44 /* DataRealmTVCell.swift in Sources */,
 				DA8560EE1D7EDDC4007D8C6A /* AppDelegate.swift in Sources */,
 				DA8560F61D7EDDC4007D8C6A /* htmlParser.xcdatamodeld in Sources */,
 			);

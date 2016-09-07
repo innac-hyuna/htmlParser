@@ -7,16 +7,20 @@
 //
 
 import UIKit
-import CoreData
+import RealmSwift
+
+var uiRealm: Realm!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+  
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
+       
+       uiRealm = try! Realm()
+       print(uiRealm.configuration.fileURL)
        let mainVC = MainViewController()
        window = UIWindow(frame: UIScreen.mainScreen().bounds)
        window?.rootViewController = mainVC
