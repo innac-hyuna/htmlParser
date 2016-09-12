@@ -15,7 +15,7 @@ import Kanna
 class MainViewController: UIViewController {
     
     var rowCount = 9
-    var urlString = "https://www.discogs.com/sell/item/38216972"
+    var urlString = "https://www.discogs.com/sell/item/"
     var lists : Results<RowDataRealm>!
     var tableView: UITableView!
 
@@ -60,6 +60,11 @@ class MainViewController: UIViewController {
             if let doc = Kanna.HTML(html: response.result.value!, encoding: NSUTF8StringEncoding) {
             var text = ""
             var price = ""
+            var label = ""
+            var format = ""
+            var country = ""
+            var released = ""
+            var genre = ""
             // Search for nodes by CSS
             for link in doc.css("span") {
                 if link["itemprop"] == "name" && (link["title"] != nil || link.content != nil) {
@@ -69,12 +74,59 @@ class MainViewController: UIViewController {
                     price =  link.content!
                 }
                 
+             }
+                
+             var linkBefore = ""
+                
+             for link in doc.css("div") {
+                
+                switch linkBefore {
+                case "Label:" :
+                    if let linkcss = link.at_css("a") {
+                        label = linkcss.content!.trimSim("\n")
+                        linkBefore = link.content ?? ""
+                    }
+                 case "Format:" :
+                    if  link["class"] == "content"{
+                        if let linkcss = link.content {
+                            format =  linkcss.trimSim("\n")
+                            linkBefore = linkcss }
+                    }
+                 case "Country:" :
+                    if  link["class"] == "content"{
+                        if let linkcss = link.content {
+                            country =  linkcss.trimSim("\n")
+                            linkBefore = linkcss }
+                    }
+                case "Released:":
+                    if  link["class"] == "content"{
+                        if let linkcss = link.text {
+                            released =  linkcss.trimSim("\n")
+                            linkBefore = linkcss }
+                    }
+                case "Genre:" :
+                    if  link["class"] == "content"{
+                        if let linkcss = link.text {
+                            genre = linkcss.trimSim("\n")
+                            linkBefore = linkcss }
+                    }
+                default:
+                     linkBefore = link.content ?? ""
                 }
+                
+               }
+                
                 if text != "" {
                     let rowData = RowDataRealm()
                     rowData.id = rowData.IncrementaID()
                     rowData.title = text
                     rowData.price = price
+                    rowData.label = label
+                    rowData.format = format
+                    rowData.country = country
+                    rowData.released = Int(released) ?? 0
+                    rowData.genre = genre
+                    
                     try! uiRealm.write({ () -> Void in
                         uiRealm.add(rowData)
                         self.readTasksAndUpdateUI()
@@ -82,7 +134,7 @@ class MainViewController: UIViewController {
                             self.parseHTML(i + 1)
                         }
                     })}
-            }
+                }
             }
         }
     }
@@ -122,6 +174,7 @@ extension MainViewController : UITableViewDataSource {
         let dList = lists[indexPath.row]
         cell.idLabel.text = String(dList.id)
         cell.title.text = dList.title
+        cell.label.text = dList.label
         cell.country.text = dList.country
         cell.format.text  = dList.format
         cell.genre.text = dList.genre

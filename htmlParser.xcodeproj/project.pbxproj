@@ -147,11 +147,11 @@
 				DA216BCB1D80145B00A2EF44 /* DataRealmTVCell.swift */,
 				DA8560EF1D7EDDC4007D8C6A /* MainViewController.swift */,
 				DA8561201D7F272E007D8C6A /* Extention.swift */,
+				DA216BC91D800A1900A2EF44 /* RowDataRealm.swift */,
 				DA8560F71D7EDDC4007D8C6A /* Assets.xcassets */,
 				DA8560F91D7EDDC4007D8C6A /* LaunchScreen.storyboard */,
 				DA8560FC1D7EDDC4007D8C6A /* Info.plist */,
 				DA8560F41D7EDDC4007D8C6A /* htmlParser.xcdatamodeld */,
-				DA216BC91D800A1900A2EF44 /* RowDataRealm.swift */,
 			);
 			path = htmlParser;
 			sourceTree = "<group>";

@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum FontWidth: String {
+    case none = "none"
+    case bold = "bold"
+    case italic = "italic"
+}
+
 extension UITextField {
     
     func setDesignField(leftPadding: CGFloat, borderWidth: CGFloat, borderColor: UIColor, bgColor: UIColor) {
@@ -25,8 +31,16 @@ extension UITextField {
 }
 
 extension UIFont {
-   static func fontFamilySize(fontSize: CGFloat) -> UIFont {
-       return UIFont(name: "Arial", size: fontSize)!
+    static func fontFamilySize(fontSize: CGFloat, fontWidth: FontWidth = FontWidth.none) -> UIFont {
+        switch fontWidth {
+        case FontWidth.bold:
+            return UIFont(name: "Arial-BoldMT", size: fontSize)!
+        case FontWidth.italic:
+            return UIFont(name: "Arial-ItalicMT", size: fontSize)!
+        default:
+            return UIFont(name: "Arial", size: fontSize)!
+        }
+       
     }
 }
 
@@ -58,4 +72,18 @@ extension UIColor {
         return UIColor.blackColor()
     }
 
+}
+
+extension String {
+    func trimSim(strSim: String) -> String {
+        var result: String!
+        switch strSim {
+        case "\n":
+             result =  self.stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: " ,\u{000A}\u{000B}\u{000C}\u{000D}\u{0085}"))
+        default:
+            result = ""
+        }
+       
+        return result
+    }
 }

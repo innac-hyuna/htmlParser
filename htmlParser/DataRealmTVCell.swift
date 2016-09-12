@@ -30,7 +30,7 @@ class DataRealmTVCell: UITableViewCell {
     
         title = UILabel()
         title.textColor = UIColor.textColor()
-        title.font = UIFont.fontFamilySize(14)
+        title.font = UIFont.fontFamilySize(14, fontWidth: FontWidth.bold)
         contentView.addSubview(title)
     
         label = UILabel()
@@ -77,14 +77,14 @@ class DataRealmTVCell: UITableViewCell {
         idLabel.snp_makeConstraints { (make) in
             make.top.equalTo(contentView.snp_top).offset(10)
             make.left.equalTo(contentView.snp_left).offset(10)
-            make.width.equalTo(35)
+            make.width.equalTo(60)
             make.height.equalTo(20)
         }
        
         title.snp_makeConstraints { (make) in
             make.top.equalTo(contentView.snp_top).offset(10)
             make.left.equalTo(idLabel.snp_left).offset(10)
-            make.width.equalTo(contentView).offset(-60)
+            make.width.equalTo(contentView).offset(-100)
             make.height.equalTo(20)
         }
         
